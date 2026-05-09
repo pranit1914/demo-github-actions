@@ -5,5 +5,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name: Hello Stop
-         run: echo "Welcome to GHA"
+         run: |
+         echo "This is line one Pranit"
+         echo "this is line second Pawar"
         
