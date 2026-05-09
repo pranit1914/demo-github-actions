@@ -1,11 +1,25 @@
 name: Hello World
-on: workflow_dispatch
+
+on:
+  workflow_dispatch:
+
 jobs:
-  hello:
-     runs-on: ubuntu-latest
-     steps:
-       - name: Hello Stop
-         run: |
-           echo "This is line one Pranit"
-           echo "this is line second Pawar"
-        
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Step
+        run: echo "A demo Build"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
+        run: echo "Running test cases"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoly the App
+        run: echo "Deploying the app"
+
+   
