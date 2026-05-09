@@ -6,6 +6,6 @@ jobs:
      steps:
        - name: Hello Stop
          run: |
-         echo "This is line one Pranit"
-         echo "this is line second Pawar"
+           echo "This is line one Pranit"
+           echo "this is line second Pawar"
         
