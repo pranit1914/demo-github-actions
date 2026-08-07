@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Build Step
         run: |
-        echo "Hello Pranit" 
-        echo "This is new cicd "
+          echo "Hello Pranit" 
+          echo "This is new cicd mm"
 
   
 
