@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build Step
-        run: echo "Hello This is my CICD GitHub Action Demo Class cc "
+        run: |
+        echo "Hello Pranit" 
+        echo "This is new cicd "
 
   
 
