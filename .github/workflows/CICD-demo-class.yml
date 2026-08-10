@@ -9,23 +9,17 @@ jobs:
     steps:
       - name: Build Step
         run: |
-          echo "Hello Pranit" 
+          echo "Hello Pranit"
           echo "This is new cicd mm"
 
-     test:
-      run-on: ubuntu-latest
-      steps: 
-        -name: Test Phase
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Phase
         run: echo "Running TC"
 
-      deploy:
-        runs-on: ubuntu-latest
-        steps:
-          -name: Deploy the app
-          run: echo "Deploy app correctly"
-          
-        
-
-  
-
-   
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the app
+        run: echo "Deploy app correctly"
