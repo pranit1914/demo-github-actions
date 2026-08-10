@@ -14,12 +14,14 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Test Phase
         run: echo "Running TC"
 
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Deploy the app
         run: echo "Deploy app correctly"
